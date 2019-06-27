@@ -1,0 +1,158 @@
+.Header{
+	width: 100%;
+	height: 130px;
+
+	display: flex;
+	justify-content:center;
+
+	color: #fff;
+
+	position: absolute;
+	top: 0;
+
+}
+.Header-Inner{
+	width: 90%;
+	height: 100%;
+
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+	
+
+	border-bottom: 1px solid #fff;
+
+}
+.Header-Inner__Left{
+	width: 35%;
+}
+.Header-Inner__Right{
+	width: 65%;
+}
+
+.Header-Inner__Left-HeadLine{
+	font-size: 36px;
+	font-family: "Sign Pointer";
+}
+.Header-LogoImg{
+	height: 40px;
+}
+.LogoLink{
+	text-decoration: none;
+	color: #fff;
+}
+
+
+.Global-Nav-ListGroup{
+	display: flex;
+	flex-wrap: wrap;
+	line-height: 2em;
+
+	justify-content: space-between;
+
+	font-size: 16px;
+}
+.Global-Nav-List{
+	display: inline-block;
+	margin-left: 1em;
+}
+
+.Global-Nav-List-Link{
+	text-decoration: none;
+	color: #fff;
+}
+.SP-GlobalNavImg_open{
+	display: none;
+}
+
+.SP-Global-Nav-Container{
+	display: none;
+}
+.SP-Global-Nav-List-Link{
+	text-decoration: none;
+	color: #fff;
+}
+
+
+@media screen and (max-width: 768px) { 
+	.Header{
+		height: 80px;
+	}
+	.Header-Inner__Left{
+		width: 100%;
+	}
+
+	.Header-LogoImg{
+		height: 30px;
+	}
+	.Header-Inner__Left-HeadLine{
+		font-size: 24px;
+
+	}
+	.Global-Nav-ListGroup{
+		display: none;
+	}	
+	
+
+
+
+
+	.SP-Global-Nav{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		height: 95vh;
+	}
+	.SP-GlobalNavImg{
+		display: block;
+		width: 40px;
+	}
+
+	.SP-Global-Nav-Container{
+		width: 100vw;
+		height: 100vh;
+
+		background-color: #000;
+		position: fixed;
+		z-index: 100;
+	}
+	.SP-GlobalNavImg-Container{
+		width: 90%;
+		height: 80px;
+
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+	.SP-GlobalNavImg_open{
+		display: block;
+		width: 40px;
+
+		position: fixed;
+		right: 5%;
+
+		z-index: 100;
+	}
+	.SP-GlobalNavImg_close{
+		width: 40px;
+	}
+	.SP-Global-Nav-ListGroup{
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+
+		text-align: center;
+
+	}
+
+	.show{
+		display: block;
+	}
+	.hide{
+		display: none;
+	}
+
+}

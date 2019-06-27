@@ -1,0 +1,35 @@
+.NewsSection{
+	padding: 130px 0;
+
+	background-color: #000;
+	color: #fff;
+}
+.NewsSection-CardGroup{
+	width: 80%;
+}
+
+.NewsSection-Card{
+	width: 100%;
+
+	display: flex;
+}
+.NewsSection-Card__Left,
+.NewsSection-Card__Right{
+	width: 50%;
+	height: auto;
+}
+.NewsSection-Card__Right{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.NewsSection-Card-TextGroup{
+	display: flex;
+	flex-direction: column;
+}
+.NewsSection-Card-HeadLine{
+
+}
+.NewsSection-Card-Description{
+	
+}

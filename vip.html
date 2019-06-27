@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>VIP | Tokyo Beach Club</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./resources/styles/TBC/default.css">
+	<link rel="stylesheet" type="text/css" href="./resources/styles/TBC/header.css">
+	<link rel="stylesheet" type="text/css" href="./resources/styles/TBC/footer.css">
+	<link rel="stylesheet" type="text/css" href="./resources/styles/TBC/main-visual.css">
+	<link rel="stylesheet" type="text/css" href="./resources/styles/TBC/main.css">
+	<link rel="shortcut icon" href="./resources/images/TBC/icon.ico">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body>
+	<header class = "Header">
+		<div class="Header-Inner">
+			<div class = "Header-Inner__Left">
+				<h1 class = "Header-Inner__Left-HeadLine"><a href = "index" class = "LogoLink"><img class = "Header-LogoImg" src = "./resources/images/TBC/TBC-logo.png"></a></h1>
+			</div>
+			<div class = "Header-Inner__Right">
+				<nav class = "Global-Nav">
+					<ul class = "Global-Nav-ListGroup">
+						<li class = "Global-Nav-List"><a href = "index" class = "Global-Nav-List-Link"> TOP</a></li>
+						<li class = "Global-Nav-List"><a href = "about" class = "Global-Nav-List-Link"> ABOUT</a></li>
+						<li class = "Global-Nav-List"><a href = "news" class = "Global-Nav-List-Link"> NEWS</a></li>
+						<li class = "Global-Nav-List"><a href = "schedule" class = "Global-Nav-List-Link"> SCHEDULE</a></li>
+						<li class = "Global-Nav-List"><a href = "vip" class = "Global-Nav-List-Link"> VIP</a></li>
+						<li class = "Global-Nav-List"><a href = "gallery" class = "Global-Nav-List-Link"> GALLERY</a></li>
+						<li class = "Global-Nav-List"><a href = "artist" class = "Global-Nav-List-Link"> ARTIST</a></li>
+						<li class = "Global-Nav-List"><a href = "access" class = "Global-Nav-List-Link"> ACCESS</a></li>
+						<li class = "Global-Nav-List"><a href = "contact" class = "Global-Nav-List-Link"> CONTACT</a></li>
+						<li class = "Global-Nav-List"><a href = "recruit" class = "Global-Nav-List-Link"> RECRUIT</a></li>
+					</ul>
+				</nav>
+			</div>
+			<img class = "SP-GlobalNavImg_open" src = "./resources/images/TBC/bars_open.png">
+		</div>
+
+		<div class="SP-Global-Nav-Container">
+			<nav class = "SP-Global-Nav">
+				<div class="SP-GlobalNavImg-Container">
+					<img class = "SP-GlobalNavImg_close" src = "./resources/images/TBC/bars_open.png">
+				</div>
+				<ul class = "SP-Global-Nav-ListGroup">
+					<li class = "SP-Global-Nav-List"><a href = "index" class = "SP-Global-Nav-List-Link">TOP</a></li>
+					<li class = "SP-Global-Nav-List"><a href = "about" class = "SP-Global-Nav-List-Link">ABOUT</a></li>
+					<li class = "SP-Global-Nav-List"><a href = "news" class = "SP-Global-Nav-List-Link">NEWS</a></li>
+					<li class = "SP-Global-Nav-List"><a href = "schedule" class = "SP-Global-Nav-List-Link">SCHEDULE</a></li>
+					<li class = "SP-Global-Nav-List"><a href = "vip" class = "SP-Global-Nav-List-Link">VIP</a></li>
+					<li class = "SP-Global-Nav-List"><a href = "gallery" class = "SP-Global-Nav-List-Link">GALLERY</a></li>
+					<li class = "SP-Global-Nav-List"><a href = "artist" class = "SP-Global-Nav-List-Link">ARTIST</a></li>
+					<li class = "SP-Global-Nav-List"><a href = "access" class = "SP-Global-Nav-List-Link">ACCESS</a></li>
+					<li class = "SP-Global-Nav-List"><a href = "contact" class = "SP-Global-Nav-List-Link">CONTACT</a></li>
+					<li class = "SP-Global-Nav-List"><a href = "recruit" class = "SP-Global-Nav-List-Link">RECRUIT</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<div class="MainVisual">
+			<div class="MainVisual-Filter">
+				<div class="MainVisual-HeadLine">
+					<div class="MainVisual-HeadLine__Top"></div>
+					<div class="MainVisual-HeadLine__Middle">Vip<br class = "PC-BrTag"><br class = "SP-BrTag">Coming Soon...</div>
+					<div class="MainVisual-HeadLine__Bottom"></div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer class = "Footer">
+		<div class = "Footer-Inner">
+			<div  class = "Footer-Inner__Top">
+				<a href="https://www.facebook.com/BeachTokyo/" target="_blank"><img src="resources/images/TBC/icon_facebook.png" alt="icon_facebook" class = "icon_facebook"></a>
+				<a href="https://twitter.com/beach_tokyo" target="_blank"><img src="resources/images/TBC/icon_twitter.png" alt="icon_twitter" class = "icon_twitter"></a>
+				<a href="https://www.instagram.com/tokyo_beach_club/" target="_blank"><img src="resources/images/TBC/icon_insta.png" alt="icon_insta"  class = "icon_insta"></a>
+			</div>
+			<div  class = "Footer-Inner__Bottom">
+				<a href = "index" class = "LogoLink"><img class = "Footer-LogoImg" src = "./resources/images/TBC/TBC-logo.png" ></a>
+			</div>
+		</div>
+	</footer>
+
+
+<script>
+	$(function(){
+				$(".SP-GlobalNavImg_open").on("click",function(){
+					$(".SP-Global-Nav-Container").slideToggle(300);
+					$(".SP-GlobalNavImg_open").addClass("hide");
+				});
+
+				$(".SP-GlobalNavImg_close").on("click",function(){
+					$(".SP-Global-Nav-Container").slideToggle(300);
+					$(".SP-GlobalNavImg_open").removeClass("hide");
+				});
+
+				
+			});
+</script>
+</body>
+</html>

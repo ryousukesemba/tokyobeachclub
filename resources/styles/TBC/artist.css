@@ -1,0 +1,240 @@
+.ArtistSection{
+	background-color: #000;
+	height: auto;
+	width: 100%;
+
+	color: #fff;
+
+	padding: 130px 0;
+
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+}
+
+.ArtistSection-HeadLine{
+	font-size: 22px;
+	text-align: center;
+
+	padding-bottom: 130px;
+}
+.ArtistSection-Group{
+	display: flex;
+	justify-content: center;
+
+	width: 80%;
+}
+.ArtistSection-Group__Left{
+	width: 50%;
+	padding-right: 73px;
+}
+.ArtistSection-Group__Left-Image{
+	width: 100%;
+	height: 0;
+	padding-top: 100%;
+}
+
+.ArtistSection-Group__Left-ImageTitle{
+
+	display: none;
+
+	width: 95%;
+	height: 100px;
+	background-color: #262626;
+
+	position: relative;
+	top: -80px;
+	right: 25px;
+
+	padding: 0 30px;
+	font-size: 16px;
+
+	/* display: flex; 作品名を表示させる */
+	align-items: center;
+}
+
+
+
+
+.ArtistSection-Group__Right{
+	width: 50%;
+
+	display: flex;
+	flex-direction:column;
+}
+.ArtistSection-Group__Right-HeadLine{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	padding-bottom: 30px;
+	padding-top: 30px;
+}
+.ArtistSection-Group__Right-ArtistName{
+	font-size: 22px;
+}
+.ArtistSection-Group__Right-VerticalBorder{
+	width: 1px;
+	height: 70px;
+
+	background-color: #fff;
+
+	transform: rotate(30deg);
+
+	margin: 0 40px 0 20px;
+}
+.ArtistSection-Group__Right-Belongs{
+	font-size: 18px;
+	line-height: 1.5em;
+}
+
+.ArtistSection-Group__Right_ArtistDescription{
+	font-size: 14px;
+	line-height: 2em;
+}
+
+
+
+
+.DJsSection{
+	background-color: #000;
+	height: auto;
+	width: 100%;
+
+	color: #fff;
+
+
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+}
+
+.DJsSection-HeadLine{
+	font-size: 22px;
+	padding-bottom: 130px;
+}
+.DJsSection-CardGroup{
+	width: 80%;
+	height: auto;
+	
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.DJsSection-Card{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	width: 330px;
+
+	margin: 0 15px;
+
+	padding-bottom: 115px;
+}
+
+.DJsSection-Card-Image{
+	width: 75%;
+	height: 0;
+	padding-top: 75%;
+	border-radius: 50% 50%;
+}
+
+.DJsSection-Card-Title{
+	padding-top: 15px;
+	padding-bottom: 20px;
+
+	font-size: 20px;
+}
+.DJsSection-Card-Name{
+	padding-bottom: 20px;
+	font-weight: bold;
+	font-size: 24px;
+}
+.DJsSection-Card-Description{
+	font-size: 12px;
+	text-align: center;
+	line-height: 2.2em;
+}
+
+@media screen and (max-width: 768px) { 
+	.ArtistSection{
+		padding: 80px 0;
+	}
+	.ArtistSection-HeadLine{
+		padding-bottom: 60px;
+		font-size: 20px;
+	}
+	.ArtistSection-Group{
+		width: 90%;
+	}
+	.ArtistSection-Group{
+		flex-direction: column;
+	}
+	.ArtistSection-Group__Left , .ArtistSection-Group__Right{
+		width: 100%;
+		padding: 0;
+	}
+	.ArtistSection-Group__Left-ImageTitle{
+		height: 80px;
+		top: -60px;
+		right: 5px;
+	}
+	.ArtistSection-Group__Right_ArtistDescription{
+		font-size: 12px;
+	}
+	.ArtistSection-Group__Right-HeadLine{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.ArtistSection-Group__Right-VerticalBorder{
+		display: none;
+	}
+	.ArtistSection-Group__Right-ArtistName{
+		font-size: 18px;
+		padding-bottom: 30px;
+		border-bottom: 2px solid #fff;
+	}
+	.ArtistSection-Group__Right-Belongs{
+		padding-top: 30px;
+		font-size: 15px;
+	}
+
+	.DJsSection-HeadLine{
+		padding-bottom: 60px;
+		font-size: 20px;
+	}
+	.DJsSection-CardGroup{
+		width: 90%;
+	}
+	.DJsSection-Card{
+		width: 100%;
+		margin: 0;
+
+		padding-bottom: 50px;
+	}
+	.DJsSection-Card-Title{
+		font-size: 16px;
+
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.DJsSection-Card-Image{
+		width: 60%;
+		padding-top: 60%;
+
+		box-shadow: 0 0 8px rgba(0,0,0,.8) inset;
+	}
+	.DJsSection-Card-Name{
+		font-size: 18px;
+
+		padding-bottom: 10px;
+	}
+	.DJsSection-Card-Description{
+		font-size: 12px;
+	}
+
+}

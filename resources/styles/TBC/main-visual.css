@@ -1,0 +1,98 @@
+.MainVisual{
+	width:100%;
+	height:810px;
+
+	background-color: #000;
+}
+
+.MainVisual-Filter{
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: rgba(0,0,0,.6);
+	color: #fff;
+}
+.MainVisual-HeadLine{
+	display: flex;
+	flex-direction: column;
+
+
+	text-align: center;
+	position: relative;
+	top: 65px;
+}
+.MainVisual-HeadLine__Top,.MainVisual-HeadLine__Bottom{
+	font-size: 36px;
+	font-weight: bold;
+}
+.MainVisual-HeadLine__Middle{
+	font-size: 90px;
+
+	vertical-align: middle;
+
+	padding: 20px 0;
+
+	font-family: "Sign Pointer";
+}
+
+
+.PageTitleSection{
+	padding: 230px 10% 0 10%;
+	background-color: #000;
+
+	color: #fff;
+	text-align: center;
+	font-family: "Sign Pointer";
+}
+.PageTitleSection-HeadLine{
+	font-size: 90px;
+
+}
+
+
+@media screen and (max-width: 768px) { 
+	.MainVisual{
+		height: 660px;
+	}
+	.MainVisual-HeadLine__Top,.MainVisual-HeadLine__Bottom{
+		font-size: 22px;
+		line-height: 44px;
+	}
+	.MainVisual-HeadLine__Middle{
+		font-size: 48px;
+	}
+	.MainVisual-HeadLine{
+		top: 40px;
+	}
+
+	.PageTitleSection{
+		padding: 120px 10% 0 10%;
+		background-color: #000;
+
+		color: #fff;
+		text-align: center;
+		font-family: "Sign Pointer";
+	}
+	.PageTitleSection-HeadLine{
+		font-size: 64px;
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
